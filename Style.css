@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "Ditty";
+    src: url("Ditty.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "medievalsharp";
+    src: url("medievalsharp.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+body
+{
+    font-family: Ditty, sans-serif;
+    font-size: 1.75rem;
+    color: lch(0.76% 1.21 110.18 / 0.842);
+    -webkit-text-stroke: 0.5px rgba(218, 218, 218, 0.671);
+  background-image: url("https://i.redd.it/ctmhoyo221861.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    min-height: 80vh;
+    margin: 0;
+  margin: 0;
+  display: grid;
+  place-items: center;   
+
+}
+body.stationary::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background: url("stationary.png") no-repeat center;
+    background-size: 500px;
+
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: -1;
+}
+body.scout::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background: url("scout.png") no-repeat center;
+    background-size: auto;
+
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: -1;
+}
+body.militarypolice::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background: url("military.png") no-repeat center;
+    background-size: 800px;
+
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: -1;
+}
+.options a {
+    background-color: #2b4200;
+  border: 2px solid rgba(218, 218, 218, 0.671);
+  -webkit-text-stroke: 0.5px rgba(218, 218, 218, 0);
+  color: #b8b5b5;
+  padding: 1px 8px;
+  text-decoration: none;
+  border-radius: 6px;
+  margin:  30px;
+  transition: all 0.3s ease;
+}
+.options a:hover,
+.options a.active {
+  background-color: #e2e2e2;
+  color: #12102a;
+  box-shadow: 0 0 12px #3ee692;
+}
+
+.options {
+   position: relative;
+    top: 55px;
+}
+.home a {
+  font-size: 1.5rem;
+    background-color: #2b4200;
+  border: 2px solid rgba(218, 218, 218, 0.671);
+  -webkit-text-stroke: 0.5px rgba(218, 218, 218, 0);
+  color: #b8b5b5;
+  padding: 1px 8px;
+  text-decoration: none;
+  border-radius: 6px;
+  margin:  30px;
+  transition: all 0.3s ease;
+}
+.home a:hover {
+  background-color: #e2e2e2;
+  color: #12102a;
+  box-shadow: 0 0 12px #3ee692;
+}
+
+.home {
+   position: relative;
+   left: 10px;
+    top: 75px;
+}
+.description {
+  color: rgba(253, 253, 253, 0.8);
+   -webkit-text-stroke: 0.5px rgba(218, 218, 218, 0);
+  font-family: medievalsharp, sans-serif;
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
